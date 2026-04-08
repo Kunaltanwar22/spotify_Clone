@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    .music-player {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #282828;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.5);
+      height: 50px;
+    }
+
+    .player-controls {
+      display: flex;
+      align-items: center;
+    }
+
+    .player-controls button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    audio {
+      width: 300px;
+      height: 40px;
+      
+    }
+     .main-content{
+      margin-bottom: 50px;
+    }
+    
+ </style>
+</head>
+<body>
+  <div class="container">
+   
+    <div class="sidebar">
+      <div class="logo"><img src="D:\website\Assests\spotify.jpg" width="150px" height="100px"></div>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="https://open.spotify.com/user/wds0hx1ti3gpn43s744w3t530">Profile</a></li>
+      </ul>
+    </div>
+
+ 
+
+    <div class="main-content">
+      <h1>Welcome Back, Kunal!!</h1>
+      
+      <div class="artist-section">
+        <h2>The Weeknd</h2>
+        <div class="playlist">
+          <div class="card" data-src="D:\website\Assests\song 1.mp3">
+            <img src="D:\website\Assests\Album 1.jpg" alt="Album 1">
+            <h3>Call Out My Name</h3>
+            <p>The Weeknd</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\song 2.mp3">
+            <img src="D:\website\Assests\Album 2.jpg" alt="Album 2">
+            <h3>Popular</h3>
+            <p>The Weeknd</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\song 3.mp3">
+            <img src="D:\website\Assests\Album 3.jpg" alt="Album 3">
+            <h3>Creepin'</h3>
+            <p>The Weeknd</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\song 4.mp3">
+            <img src="D:\website\Assests\Album 4.jpg" alt="Album 4">
+            <h3>Timeless</h3>
+            <p>The Weeknd</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\song 5.mp3">
+            <img src="D:\website\Assests\Album 5.jpg" alt="Album 5">
+            <h3>Starboy</h3>
+            <p>The Weeknd</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="artist-section">
+        <h2>Eminem</h2>
+        <div class="playlist">
+          <div class="card" data-src="D:\website\Assests\Eminem song 1.mp3">
+            <img src="D:\website\Assests\Eminem.jpg" alt="Album 1">
+            <h3>Sing for a moment</h3>
+            <p>Eminem</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\Eminem song 2.mp3">
+            <img src="D:\website\Assests\Eminem 2.jpg" alt="Album 2">
+            <h3>Stan</h3>
+            <p>Eminem</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\Eminem song 3.mp3">
+            <img src="D:\website\Assests\Eminem 3.jpg" alt="Album 2">
+            <h3>Not Afraid</h3>
+            <p>Eminem</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\Eminem song 4.mp3">
+            <img src="D:\website\Assests\Eminem 5.jpg"alt="Album 2">
+            <h3>Mockingbird</h3>
+            <p>Eminem</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\Eminem song 5.mp3">
+            <img src="D:\website\Assests\Eminem 4.jpg"alt="Album 2">
+            <h3>The Real Slim Shady</h3>
+            <p>Eminem</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="artist-section">
+        <h2>One Direction</h2>
+        <div class="playlist">
+          <div class="card" data-src="D:\website\Assests\one direction song 1.mp3">
+            <img src="D:\website\Assests\one direction 1.jpg" alt="Album 1">
+            <h3>Story Of My Life</h3>
+            <p>One Direction</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\one direction song 2.mp3">
+            <img src="D:\website\Assests\one direction 2.jpg"alt="Album 2">
+            <h3>Night Changes</h3>
+            <p>One Direction</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\one direction song 3.mp3">
+            <img src="D:\website\Assests\one direction 3.jpg" alt="Album 2">
+            <h3>Steal My Girl</h3>
+            <p>One Direction</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\one direction song 4.mp3">
+            <img src="D:\website\Assests\one direction 4.jpg" alt="Album 2">
+            <h3>What Makes You Beautiful</h3>
+            <p>One Direction</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\one direction song 5.mp3">
+            <img src="D:\website\Assests\one direction 5.jpg"alt="Album 2">
+            <h3>You & I</h3>
+            <p>One Direction</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="artist-section">
+        <h2>Taylor Swift</h2>
+        <div class="playlist">
+          <div class="card" data-src="D:\website\Assests\taylor swift song 1.mp3">
+            <img src="D:\website\Assests\taylor swift 1.jpg" alt="Album 1">
+            <h3>Cruel Summer</h3>
+            <p>Taylor Swift</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\taylor swift song 2.mp3">
+            <img src="D:\website\Assests\taylor swift 2.jpg" alt="Album 2">
+            <h3>Lover</h3>
+            <p>Taylor Swift</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\taylor swift song 3.mp3">
+            <img src="D:\website\Assests\taylor swift 3.jpg" alt="Album 2">
+            <h3>August</h3>
+            <p>Taylor Swift</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\taylor swift song 4.mp3">
+            <img src="D:\website\Assests\taylor swift 4.jpg"alt="Album 2">
+            <h3>Blank Space</h3>
+            <p>Taylor Swift</p>
+          </div>
+          <div class="card" data-src="D:\website\Assests\taylor swift song 5.mp3">
+            <img src="D:\website\Assests\taylor swift 5.jpg" alt="Album 2">
+            <h3>Love Story</h3>
+            <p>Taylor Swift</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="music-player">
+      <audio id="audio" controls>
+        <source id="audio-source" src="D:\website\Assests\Album3.jpg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
